@@ -2,7 +2,7 @@ package model.dao;
 
 import java.util.List;
 
-
+import model.entities.Department;
 import model.entities.Seller;
 
 public interface SellerDao {
@@ -14,4 +14,5 @@ public interface SellerDao {
 	//reponsavel por pegar o ID e consultar no banco de dados um obj com esse ID
 		Seller findById(Integer id);
 		List<Seller> findAll();
+		List<Seller> findByDepartment(Department department);
 }
